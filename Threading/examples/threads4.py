@@ -3,6 +3,7 @@ import time
 import queue
 
 # Queue in multithreading
+# if you don't do the Queue.task_done() then because of q.join() the program will block forever or wait forever.
 
 
 class MyThread(Thread):
